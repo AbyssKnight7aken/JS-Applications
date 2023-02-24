@@ -1,0 +1,7 @@
+*.pptx
+*.zip
+*.pdf
+*/*.pptx
+*/*.zip
+*/*.pdf
+*.*.demoCode
