@@ -5,3 +5,5 @@
 */*.zip
 */*.pdf
 *.*.demoCode
+*.*node_modules
+*/*node_modules
