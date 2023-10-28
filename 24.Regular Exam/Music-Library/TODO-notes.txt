@@ -1,0 +1,49 @@
+## Content
+
+### Home Page (stitic, optional)
+### Catalog
+### Details
+- Edit
+- Delete
+### Create
+### Edit
+### Login
+### Register
+### Bonus:
+- Like
+- Comments
+- Pagination
+- Search
+- Profile Page
+- Custom Catalog
+
+## Architecture
+- App entry point (initialize libraries and modules, dispatch navigation)
+- Request module
+- User session
+- Data CRUD
+- Views
+- Utilities
+
+=============================================================================
+1. NPM init
+- install page, lit-html
+
+2. Create src/data/api.js
+- host url
+- async request function (headers, authorization, error handling...)
+
+3. User data 3 util functions (LOAD, SAVE and DELETE)
+- src/util.js
+
+4. Authorization - create src/data/auth.js
+5. app.js - import libraries (page, render...)
+6. insert middleware to load stuff used for all views
+- decorateContext function, renderView function
+-src/views/layout.js
+7. Create views and update page path in app.js
+-homeView
+-loginView
+- create submit eventHandler in src/util.js
+-registerView
+8. Create logout funcion in app.js
